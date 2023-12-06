@@ -9,7 +9,7 @@ export default function handler(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
 
-    const allowedParams = ["About", "Team", "Contact", "FAQ", "Other"];
+    const allowedParams = ["About", "Team", "Contact", "FAQ", "Other", "All meetups"];
 
     const hasTitle = searchParams.has("title");
     const title = hasTitle
